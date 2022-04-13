@@ -1,0 +1,64 @@
+body {
+    background-color: #333;
+}
+
+.container {
+    width: 21.6cm;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: aliceblue;
+}
+
+html {
+    font-size: 110%;
+}
+
+.list-item--skills {
+    margin-right: 2rem;
+    padding-left: 3.4rem;
+    height: 70px;
+
+    background-size: 2.8rem 2.8rem;
+}
+
+.list--img {
+    height: 130px;
+    align-items: center;
+}
+
+.list-img {
+    width: 60px;
+    height: 60px;
+}
+
+@media screen and (max-height: 649px) {
+    .botton {
+        position: absolute;
+        top: calc(100% - 15px);
+        left: calc(50% - 100px);
+    
+        width: 200px;
+        height: 40px;
+    }
+
+    .botton-icon {
+        width: 20px;
+        height: 20px;
+        margin-left: 3px;
+    }
+
+    .list-item--contact {
+        height: 50px;
+    }
+
+    .list--img {
+        height: 200px;
+        align-items: center;
+    }
+    .list-img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
