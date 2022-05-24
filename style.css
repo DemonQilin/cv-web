@@ -35,9 +35,6 @@ body {
 
     color: var(--color-header);
     background-image: linear-gradient(45deg,var(--color-content) 50%, var(--color-title));
-    /* background-size: cover;
-    background-position:50% 80%;
-    background-repeat: no-repeat; */
 }
 
 .header h1 {
@@ -74,11 +71,20 @@ body {
     width: 100%;
 }
 
-.botton {
+.btns {
     position: absolute;
-    top: calc(100% - 15px);
-    left: calc(50% - 60px);
+    bottom: 0;
+    left: 0;
 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    transform: translateY(50%);
+}
+
+.botton {
     display: flex;
     width: 120px;
     height: 30px;
@@ -102,6 +108,13 @@ body {
     margin-left: 3px;
 
     background-image: url('./assets/icons/cv.svg');
+}
+
+.botton-icon--portfolio {
+    background-image: url('./assets/icons/briefcase.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .botton:hover {
@@ -228,8 +241,8 @@ section > p {
     background-image: url('./assets/icons/git.svg');
 }
 
-.list-item--integral {
-    background-image: url('./assets/icons/integral.svg');
+.list-item--api {
+    background-image: url('./assets/icons/api.svg');
 }
 
 .list-item--regresion {
@@ -257,10 +270,15 @@ section > p {
 }
 
 .list--img {
+    margin-top: 1rem;
+
     justify-content: space-around;
+    align-items: flex-start;
 }
 
 .list-img {
+    margin: 0 auto;
+
     width: 40px;
     height: 40px;
 }
@@ -269,75 +287,4 @@ section > p {
     display: block;
     width: 60px;
     text-align: center;
-}
-
-/*=================== DECORATION ===================*/
-.atom {
-    display: none;
-}
-
-.circle-1 {
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: var(--size-atom);
-    height: var(--size-atom);
-}
-
-.rotator{
-    position: absolute;
-
-    width: calc(0.67 * var(--size-atom));
-    height: calc(0.67 * var(--size-atom));
-
-    border-radius: 50%;
-
-    transform-style: preserve-3d;
-}
-
-.form {
-    font-family: sans-serif;
-    font-size: 100px;
-    
-    color: var(--color-header);
-    text-shadow: 0 0 5px var(--color-header), 0 0 10px var(--color-header), 0 0 15px var(--color-header);
-}
-
-.i1 {
-    border-top: 8px solid rgba(240, 253, 255, 0.835);
-    border-left: 8px solid rgb(240, 248, 255);
-    border-top: 8px solid rgb(240, 248, 255, 0.918);
-    box-shadow: 0 0 5px rgb(32, 178, 170), 0 0 10px rgb(32, 178, 170), 0 0 15px rgb(32, 178, 170);
-    
-    animation: rotateA 3s linear infinite;
-}
-
-.i2 {
-    border-top: 8px solid rgba(44, 250, 216, 0.835);
-    border-left: 8px solid rgb(240, 246, 255);
-    border-top: 8px solid rgb(240, 248, 255, 0.918);
-    box-shadow: 0 0 5px rgb(32, 178, 170), 0 0 10px rgb(32, 178, 170), 0 0 15px rgb(32, 178, 170);
-
-    animation: rotateA 3s linear infinite;
-}
-
-@keyframes rotateA {
-    from{
-        transform: rotateX(0deg);
-    }
-    to {
-        transform: rotateX(360deg);
-    }
-}
-
-@keyframes rotateB {
-    from {
-        transform: rotateY(0deg);
-    }
-
-    to {
-        transform: rotateY(360deg);
-    }
 }

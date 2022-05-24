@@ -14,10 +14,6 @@ html {
 
 
 .botton {
-    position: absolute;
-    top: calc(100% - 15px);
-    left: calc(50% - 100px);
-    
     width: 200px;
     height: 40px;
 }

@@ -24,7 +24,6 @@ html {
 
 .list--img {
     height: 130px;
-    align-items: center;
 }
 
 .list-img {
@@ -34,10 +33,6 @@ html {
 
 @media screen and (max-height: 649px) {
     .botton {
-        position: absolute;
-        top: calc(100% - 15px);
-        left: calc(50% - 100px);
-    
         width: 200px;
         height: 40px;
     }
@@ -54,7 +49,6 @@ html {
 
     .list--img {
         height: 200px;
-        align-items: center;
     }
     .list-img {
         width: 60px;
